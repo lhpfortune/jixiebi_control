@@ -86,6 +86,7 @@ $env:ROBOT_CONTROL_TOKEN='与平台侧相同的令牌'
 python tests/ablation.py --video "完整路径/实验5_目标识别.mp4" --out results/reproduced_ablation
 python tests/controller_regression.py --server robot/gesture_robot_server.py
 python tests/stop_priority_test.py
+python tests/kinematic_check.py --sdk-dir "已安装的DICE平台SDK目录"
 ```
 
 `ablation.py`对同一真实录像的6个黄色窗口和20个非黄色窗口比较H26—34/H24—38与2/4/8帧确认，逐帧与逐窗CSV可复核；它是相关时间窗回放试验，不是新增26次独立实体实验。原始录像因包含现场画面不公开，由课程材料提供。
