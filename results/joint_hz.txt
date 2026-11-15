@@ -1,0 +1,13 @@
+subscribed to [/joint_states]
+average rate: 20.030
+	min: 0.049s max: 0.051s std dev: 0.00048s window: 20
+average rate: 20.016
+	min: 0.049s max: 0.051s std dev: 0.00050s window: 40
+average rate: 20.001
+	min: 0.048s max: 0.052s std dev: 0.00079s window: 60
+average rate: 20.005
+	min: 0.048s max: 0.052s std dev: 0.00074s window: 80
+average rate: 20.005
+	min: 0.048s max: 0.052s std dev: 0.00072s window: 100
+average rate: 20.003
+	min: 0.048s max: 0.052s std dev: 0.00072s window: 111

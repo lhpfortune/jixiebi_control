@@ -1,0 +1,15 @@
+{
+  "kind": "software loopback HTTP + FakeArm, not physical stop",
+  "cases_passed": 11,
+  "cases_total": 11,
+  "cancel_cases": 2,
+  "stop_requests": 100,
+  "roundtrip_ms": {
+    "median": 1.20085,
+    "p95": 22.412215
+  },
+  "fake_call_ms": {
+    "median": 0.919,
+    "p95": 22.143895
+  }
+}

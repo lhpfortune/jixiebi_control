@@ -1,0 +1,69 @@
+... logging to /mnt/e/agent/机械臂/_revision_20261115/ros_logs/31830100-e0fd-11f1-ba46-5f9afeaaaaef/roslaunch-localhost-1312.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/hp/robotlearning_ws/src/sfd_jixiebi/launch/grasp_demo.launch
+[1mstarted roslaunch server http://127.0.0.1:33383/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /robot_description: <?xml version="1....
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /sfd_color_vision/image_topic: /camera/image_raw
+ * /sfd_color_vision/source: synthetic
+ * /sfd_pick_place_demo/loop: False
+ * /sfd_pick_place_demo/speed: 4
+ * /sfd_pick_place_demo/wait_for_vision: True
+
+NODES
+  /
+    robot_state_publisher (robot_state_publisher/robot_state_publisher)
+    sfd_color_vision (sfd_jixiebi/vision_color_detector.py)
+    sfd_pick_place_demo (sfd_jixiebi/pick_place_demo.py)
+
+auto-starting new master
+[1mprocess[master]: started with pid [1375][0m
+[1mROS_MASTER_URI=http://127.0.0.1:11341/[0m
+]2;/home/hp/robotlearning_ws/src/sfd_jixiebi/launch/grasp_demo.launch http://127.0.0.1:11341/
+[1msetting /run_id to 31830100-e0fd-11f1-ba46-5f9afeaaaaef[0m
+[1mprocess[rosout-1]: started with pid [1400][0m
+started core service [/rosout]
+[1mprocess[robot_state_publisher-2]: started with pid [1407][0m
+[1mprocess[sfd_color_vision-3]: started with pid [1408][0m
+[1mprocess[sfd_pick_place_demo-4]: started with pid [1409][0m
+[INFO] [1794751349.829306]: OpenCV detector using the synthetic overhead workspace image
+[INFO] [1794751349.907058]: Waiting for OpenCV colour detections...
+[INFO] [1794751349.908552]: Pick-place demo ready; waiting for /sfd_jixiebi/detected_blocks
+[INFO] [1794751350.129687]: OpenCV detected 4/4 blocks: red=(0.082, 0.143), green=(-0.131, 0.131), yellow=(-0.130, -0.131), blue=(0.082, -0.143)
+[INFO] [1794751350.130430]: Demo received 4 OpenCV detections: red=(0.082, 0.143), green=(-0.131, 0.131), yellow=(-0.130, -0.131), blue=(0.082, -0.143)
+[INFO] [1794751350.560419]: Returning arm to home pose
+[INFO] [1794751351.115471]: RED: open gripper and approach block
+[INFO] [1794751352.023462]: RED: close gripper
+[INFO] [1794751352.415418]: RED: lift and transfer to RED target
+[INFO] [1794751353.502848]: RED: release block
+[INFO] [1794751354.073104]: GREEN: open gripper and approach block
+[INFO] [1794751354.977309]: GREEN: close gripper
+[INFO] [1794751355.369803]: GREEN: lift and transfer to GREEN target
+[INFO] [1794751356.463849]: GREEN: release block
+[INFO] [1794751357.036102]: YELLOW: open gripper and approach block
+[INFO] [1794751357.945590]: YELLOW: close gripper
+[INFO] [1794751358.339183]: YELLOW: lift and transfer to YELLOW target
+[INFO] [1794751359.429148]: YELLOW: release block
+[INFO] [1794751360.001064]: BLUE: open gripper and approach block
+[INFO] [1794751360.910703]: BLUE: close gripper
+[INFO] [1794751361.304130]: BLUE: lift and transfer to BLUE target
+[INFO] [1794751362.403777]: BLUE: release block
+[INFO] [1794751362.975050]: All four colours placed successfully
+[33m[WARN] [1794751362.777740699]: Moved backwards in time (probably because ROS clock was reset), re-publishing joint transforms![0m
+[sfd_color_vision-3] killing on exit
+[sfd_pick_place_demo-4] killing on exit
+[robot_state_publisher-2] killing on exit
+[INFO] [1794751364.896876]: One-shot demo complete; keeping final state and markers published
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

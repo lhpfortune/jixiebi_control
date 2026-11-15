@@ -1,0 +1,10 @@
+/joint_states
+/rosout
+/rosout_agg
+/sfd_jixiebi/demo_status
+/sfd_jixiebi/detected_blocks
+/sfd_jixiebi/scene_markers
+/sfd_jixiebi/vision/debug_image
+/sfd_jixiebi/vision_markers
+/tf
+/tf_static

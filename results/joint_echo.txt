@@ -1,0 +1,18 @@
+header: 
+  seq: 6
+  stamp: 
+    secs: 1794751350
+    nsecs: 406652688
+  frame_id: ''
+name: 
+  - joint1
+  - joint2
+  - joint3
+  - joint4
+  - joint5
+  - joint6
+  - finger_joint_right
+position: [0.0, 0.0, 0.0, 0.0, 0.0, 0.01, -0.01]
+velocity: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+effort: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+---

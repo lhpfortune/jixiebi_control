@@ -1,0 +1,25 @@
+{
+  "samples": 100,
+  "seed": 20261115,
+  "units": "mm",
+  "geometry": "DICE physical SDK modified DH; no external position measurement",
+  "inverse_forward_max_position_error": 3.58678569633262e-09,
+  "modified_dh_vs_explicit_max_position_error": 6.893362716845313e-06,
+  "max_candidate_solutions": 2,
+  "limits_deg": [
+    [
+      -90.00021045914971,
+      -151.83381570966816,
+      -45.00010522957486,
+      -120.0002806121996,
+      -90.00021045914971
+    ],
+    [
+      90.00021045914971,
+      -13.000412371518378,
+      124.99991033251118,
+      120.0002806121996,
+      90.00021045914971
+    ]
+  ]
+}

@@ -1,0 +1,8 @@
+subscribed to [/camera/image_raw]
+average rate: 10.004
+	min: 0.098s max: 0.103s std dev: 0.00179s window: 10
+average rate: 10.010
+	min: 0.097s max: 0.103s std dev: 0.00177s window: 20
+average rate: 10.008
+	min: 0.097s max: 0.103s std dev: 0.00162s window: 29
+no new messages

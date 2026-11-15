@@ -1,0 +1,248 @@
+{
+  "input_kind": "recorded real camera video replay",
+  "rates": {
+    "/joint_states": {
+      "messages": 241,
+      "hz": 19.99954698692794
+    },
+    "/camera/image_raw": {
+      "messages": 120,
+      "hz": 10.03247588403838
+    },
+    "/sfd_jixiebi/vision/debug_image": {
+      "messages": 61,
+      "hz": 5.006151092473201
+    }
+  },
+  "example": {
+    "/joint_states": {
+      "names": [
+        "joint1",
+        "joint2",
+        "joint3",
+        "joint4",
+        "joint5",
+        "joint6",
+        "finger_joint_right"
+      ],
+      "position": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.01,
+        -0.01
+      ],
+      "count": 7
+    },
+    "/sfd_jixiebi/vision/debug_image": {
+      "height": 640,
+      "width": 640,
+      "encoding": "bgr8",
+      "step": 1920,
+      "frame_id": "base_link",
+      "shape": [
+        640,
+        640,
+        3
+      ],
+      "pixel_bytes": 1228800
+    },
+    "/camera/image_raw": {
+      "height": 480,
+      "width": 640,
+      "encoding": "bgr8",
+      "step": 1920,
+      "frame_id": "camera_optical_frame",
+      "shape": [
+        480,
+        640,
+        3
+      ],
+      "pixel_bytes": 921600
+    }
+  },
+  "graph": {
+    "publishers": [
+      [
+        "/rosout_agg",
+        [
+          "/rosout"
+        ]
+      ],
+      [
+        "/rosout",
+        [
+          "/robot_state_publisher",
+          "/sfd_color_vision",
+          "/sfd_pick_place_demo",
+          "/course_video_replay_probe",
+          "/rostopic_1725_1794751359358"
+        ]
+      ],
+      [
+        "/tf",
+        [
+          "/robot_state_publisher"
+        ]
+      ],
+      [
+        "/tf_static",
+        [
+          "/robot_state_publisher"
+        ]
+      ],
+      [
+        "/sfd_jixiebi/detected_blocks",
+        [
+          "/sfd_color_vision"
+        ]
+      ],
+      [
+        "/sfd_jixiebi/vision/debug_image",
+        [
+          "/sfd_color_vision"
+        ]
+      ],
+      [
+        "/sfd_jixiebi/vision_markers",
+        [
+          "/sfd_color_vision"
+        ]
+      ],
+      [
+        "/joint_states",
+        [
+          "/sfd_pick_place_demo"
+        ]
+      ],
+      [
+        "/sfd_jixiebi/scene_markers",
+        [
+          "/sfd_pick_place_demo"
+        ]
+      ],
+      [
+        "/sfd_jixiebi/demo_status",
+        [
+          "/sfd_pick_place_demo"
+        ]
+      ],
+      [
+        "/camera/image_raw",
+        [
+          "/course_video_replay_probe"
+        ]
+      ]
+    ],
+    "subscribers": [
+      [
+        "/rosout",
+        [
+          "/rosout"
+        ]
+      ],
+      [
+        "/joint_states",
+        [
+          "/robot_state_publisher",
+          "/course_video_replay_probe"
+        ]
+      ],
+      [
+        "/sfd_jixiebi/detected_blocks",
+        [
+          "/sfd_pick_place_demo"
+        ]
+      ],
+      [
+        "/camera/image_raw",
+        [
+          "/course_video_replay_probe",
+          "/rostopic_1725_1794751359358"
+        ]
+      ],
+      [
+        "/sfd_jixiebi/vision/debug_image",
+        [
+          "/course_video_replay_probe"
+        ]
+      ]
+    ],
+    "services": [
+      [
+        "/rosout/get_loggers",
+        [
+          "/rosout"
+        ]
+      ],
+      [
+        "/rosout/set_logger_level",
+        [
+          "/rosout"
+        ]
+      ],
+      [
+        "/robot_state_publisher/get_loggers",
+        [
+          "/robot_state_publisher"
+        ]
+      ],
+      [
+        "/robot_state_publisher/set_logger_level",
+        [
+          "/robot_state_publisher"
+        ]
+      ],
+      [
+        "/sfd_color_vision/get_loggers",
+        [
+          "/sfd_color_vision"
+        ]
+      ],
+      [
+        "/sfd_color_vision/set_logger_level",
+        [
+          "/sfd_color_vision"
+        ]
+      ],
+      [
+        "/sfd_pick_place_demo/get_loggers",
+        [
+          "/sfd_pick_place_demo"
+        ]
+      ],
+      [
+        "/sfd_pick_place_demo/set_logger_level",
+        [
+          "/sfd_pick_place_demo"
+        ]
+      ],
+      [
+        "/course_video_replay_probe/get_loggers",
+        [
+          "/course_video_replay_probe"
+        ]
+      ],
+      [
+        "/course_video_replay_probe/set_logger_level",
+        [
+          "/course_video_replay_probe"
+        ]
+      ],
+      [
+        "/rostopic_1725_1794751359358/get_loggers",
+        [
+          "/rostopic_1725_1794751359358"
+        ]
+      ],
+      [
+        "/rostopic_1725_1794751359358/set_logger_level",
+        [
+          "/rostopic_1725_1794751359358"
+        ]
+      ]
+    ]
+  }
+}

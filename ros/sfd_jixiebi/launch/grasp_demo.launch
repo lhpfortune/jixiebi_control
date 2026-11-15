@@ -1,0 +1,32 @@
+<launch>
+    <arg name="model" default="$(find sfd_jixiebi)/urdf/sfd_arm.xacro"/>
+    <arg name="rviz" default="true"/>
+    <arg name="vision" default="true"/>
+    <arg name="vision_source" default="synthetic"/>
+    <arg name="camera_image_topic" default="/camera/image_raw"/>
+    <arg name="loop" default="true"/>
+    <arg name="speed" default="1.0"/>
+
+    <param name="robot_description" command="$(find xacro)/xacro $(arg model)"/>
+
+    <node name="robot_state_publisher" pkg="robot_state_publisher"
+          type="robot_state_publisher"/>
+
+    <group if="$(arg vision)">
+        <node name="sfd_color_vision" pkg="sfd_jixiebi"
+              type="vision_color_detector.py" output="screen">
+            <param name="source" value="$(arg vision_source)"/>
+            <param name="image_topic" value="$(arg camera_image_topic)"/>
+        </node>
+    </group>
+
+    <node name="sfd_pick_place_demo" pkg="sfd_jixiebi"
+          type="pick_place_demo.py" output="screen">
+        <param name="loop" value="$(arg loop)"/>
+        <param name="speed" value="$(arg speed)"/>
+        <param name="wait_for_vision" value="$(arg vision)"/>
+    </node>
+
+    <node name="rviz" pkg="rviz" type="rviz" if="$(arg rviz)"
+          args="-d $(find sfd_jixiebi)/rviz/grasp_demo.rviz" required="true"/>
+</launch>

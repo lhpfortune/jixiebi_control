@@ -1,0 +1,3 @@
+# 验证范围
+
+results中的回放窗口来自原始现场录像；相邻窗口相关。controller_summary与stop_http_latency为本机HTTP和FakeArm测量，非机械停止时间。ros_probe中的/camera/image_raw为真实录像回放，/vision/debug_image来自默认合成场景链。原始CSV中的合成测试与周报告现场记录分开保存。100组SDK正逆解闭合属于数值模型测试。

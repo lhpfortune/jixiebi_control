@@ -1,0 +1,43 @@
+-- Using CATKIN_DEVEL_PREFIX: /home/hp/robotlearning_ws/devel
+-- Using CMAKE_PREFIX_PATH: /opt/ros/noetic
+-- This workspace overlays: /opt/ros/noetic
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using Debian Python package layout
+-- Using empy: /usr/lib/python3/dist-packages/em.py
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/hp/robotlearning_ws/build/test_results
+-- Forcing gtest/gmock from source, though one was otherwise available.
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+-- Using Python nosetests: /usr/bin/nosetests3
+-- catkin 0.8.12
+-- BUILD_SHARED_LIBS is on
+-- BUILD_SHARED_LIBS is on
+-- Using CATKIN_WHITELIST_PACKAGES: sfd_jixiebi
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 1 packages in topological order:
+-- ~~  - sfd_jixiebi
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'sfd_jixiebi'
+-- ==> add_subdirectory(sfd_jixiebi)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Installing devel-space wrapper /home/hp/robotlearning_ws/src/sfd_jixiebi/scripts/vision_color_detector.py to /home/hp/robotlearning_ws/devel/lib/sfd_jixiebi
+-- Installing devel-space wrapper /home/hp/robotlearning_ws/src/sfd_jixiebi/scripts/pick_place_demo.py to /home/hp/robotlearning_ws/devel/lib/sfd_jixiebi
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/hp/robotlearning_ws/build
+Built target sfd_jixiebi_xacro_generated_to_devel_space_
+Base path: /home/hp/robotlearning_ws
+Source space: /home/hp/robotlearning_ws/src
+Build space: /home/hp/robotlearning_ws/build
+Devel space: /home/hp/robotlearning_ws/devel
+Install space: /home/hp/robotlearning_ws/install
+####
+#### Running command: "make cmake_check_build_system" in "/home/hp/robotlearning_ws/build"
+####
+####
+#### Running command: "make -j16 -l16" in "/home/hp/robotlearning_ws/build/sfd_jixiebi"
+####

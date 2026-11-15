@@ -1,0 +1,13 @@
+robot name is: sfd_arm
+---------- Successfully Parsed XML ---------------
+root Link: base_link has 1 child(ren)
+    child(1):  link1
+        child(1):  link2
+            child(1):  link3
+                child(1):  link4
+                    child(1):  link5
+                        child(1):  gripper_base
+                            child(1):  gripper_right
+                            child(2):  tool0
+                        child(2):  link6
+                            child(1):  gripper_left

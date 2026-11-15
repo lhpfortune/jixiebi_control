@@ -1,0 +1,12 @@
+﻿case,command,status,expected,state,pass,http_roundtrip_ms
+cancel_1_select,SELECT_GRAB,200,200,ARMED,True,59.359
+cancel_1,CANCEL,200,200,READY,True,20.909
+cancel_2_select,SELECT_GRAB,200,200,ARMED,True,1.028
+cancel_2,CANCEL,200,200,READY,True,0.888
+confirm_without_selection,CONFIRM,409,409,READY,True,0.851
+select_red,SELECT_GRAB,200,200,ARMED,True,0.808
+confirm_once,CONFIRM,200,200,EXECUTING,True,0.822
+busy_duplicate_confirm,CONFIRM,409,409,EXECUTING,True,1.015
+busy_cancel,CANCEL,409,409,EXECUTING,True,0.931
+estop_cannot_confirm,CONFIRM,409,409,ESTOP,True,0.751
+fault_cannot_select,SELECT_RESET,409,409,FAULT,True,0.778

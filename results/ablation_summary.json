@@ -1,0 +1,194 @@
+{
+  "source": "实验5_目标识别.mp4",
+  "sha256": "9e1bfdf92449c35c930c185a9e78e550df942a53fc1bef6777fa91eb2eb7f8cc",
+  "sample_hz": 10,
+  "notes": "Video replay; consecutive windows are correlated. No physical hardware motion. Expanded H24-38 is a candidate comparison, not claimed deployed.",
+  "summary": [
+    {
+      "variant": "baseline",
+      "N": 2,
+      "positive_windows": 6,
+      "misses": 3,
+      "negative_windows": 20,
+      "false_triggers": 0,
+      "mean_success_latency_s": 0.10000000000000002
+    },
+    {
+      "variant": "baseline",
+      "N": 4,
+      "positive_windows": 6,
+      "misses": 4,
+      "negative_windows": 20,
+      "false_triggers": 0,
+      "mean_success_latency_s": 0.30000000000000004
+    },
+    {
+      "variant": "baseline",
+      "N": 8,
+      "positive_windows": 6,
+      "misses": 5,
+      "negative_windows": 20,
+      "false_triggers": 0,
+      "mean_success_latency_s": 0.7000000000000001
+    },
+    {
+      "variant": "expanded",
+      "N": 2,
+      "positive_windows": 6,
+      "misses": 0,
+      "negative_windows": 20,
+      "false_triggers": 0,
+      "mean_success_latency_s": 0.09999999999999999
+    },
+    {
+      "variant": "expanded",
+      "N": 4,
+      "positive_windows": 6,
+      "misses": 0,
+      "negative_windows": 20,
+      "false_triggers": 0,
+      "mean_success_latency_s": 0.3833333333333333
+    },
+    {
+      "variant": "expanded",
+      "N": 8,
+      "positive_windows": 6,
+      "misses": 1,
+      "negative_windows": 20,
+      "false_triggers": 0,
+      "mean_success_latency_s": 0.7000000000000001
+    }
+  ],
+  "annotation": [
+    {
+      "id": "Y10",
+      "truth": "yellow",
+      "time_s": 10.5
+    },
+    {
+      "id": "Y11",
+      "truth": "yellow",
+      "time_s": 11.5
+    },
+    {
+      "id": "Y13",
+      "truth": "yellow",
+      "time_s": 13.5
+    },
+    {
+      "id": "Y14",
+      "truth": "yellow",
+      "time_s": 14.5
+    },
+    {
+      "id": "Y15",
+      "truth": "yellow",
+      "time_s": 15.5
+    },
+    {
+      "id": "Y38_6",
+      "truth": "yellow",
+      "time_s": 39.1
+    },
+    {
+      "id": "R1",
+      "truth": "not_yellow",
+      "time_s": 1.5
+    },
+    {
+      "id": "R2",
+      "truth": "not_yellow",
+      "time_s": 2.5
+    },
+    {
+      "id": "R3",
+      "truth": "not_yellow",
+      "time_s": 3.5
+    },
+    {
+      "id": "R4",
+      "truth": "not_yellow",
+      "time_s": 4.5
+    },
+    {
+      "id": "R5",
+      "truth": "not_yellow",
+      "time_s": 5.5
+    },
+    {
+      "id": "R6",
+      "truth": "not_yellow",
+      "time_s": 6.5
+    },
+    {
+      "id": "G19",
+      "truth": "not_yellow",
+      "time_s": 19.5
+    },
+    {
+      "id": "G20",
+      "truth": "not_yellow",
+      "time_s": 20.5
+    },
+    {
+      "id": "E32",
+      "truth": "not_yellow",
+      "time_s": 32.5
+    },
+    {
+      "id": "E33",
+      "truth": "not_yellow",
+      "time_s": 33.5
+    },
+    {
+      "id": "E34",
+      "truth": "not_yellow",
+      "time_s": 34.5
+    },
+    {
+      "id": "E35",
+      "truth": "not_yellow",
+      "time_s": 35.5
+    },
+    {
+      "id": "E36",
+      "truth": "not_yellow",
+      "time_s": 36.5
+    },
+    {
+      "id": "E37",
+      "truth": "not_yellow",
+      "time_s": 37.5
+    },
+    {
+      "id": "E40",
+      "truth": "not_yellow",
+      "time_s": 40.5
+    },
+    {
+      "id": "E41",
+      "truth": "not_yellow",
+      "time_s": 41.5
+    },
+    {
+      "id": "E42",
+      "truth": "not_yellow",
+      "time_s": 42.5
+    },
+    {
+      "id": "E48",
+      "truth": "not_yellow",
+      "time_s": 48.5
+    },
+    {
+      "id": "E49",
+      "truth": "not_yellow",
+      "time_s": 49.5
+    },
+    {
+      "id": "E50",
+      "truth": "not_yellow",
+      "time_s": 50.5
+    }
+  ]
+}

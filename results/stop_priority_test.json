@@ -1,0 +1,11 @@
+{
+  "cases": 4,
+  "passed": 4,
+  "kind": "software label sequence",
+  "checks": [
+    "STOP during normal LOCKED",
+    "held FIST emits once",
+    "releases and can trigger again",
+    "low-confidence FIST rejected"
+  ]
+}
